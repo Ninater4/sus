@@ -7,6 +7,11 @@ int main()
     float a, b, c, x;
     int num;
     setlocale(LC_ALL, "RUS");
+    
+    cout << endl << "vvedite pass ";
+    int pass;
+    cin >> pass;
+    if (pass != 228)return 0;
     cout << "Введите a и b через пробел: ";
     cin >> a >> b;
     cout << "\n1. Сложение.\n" << "2. Отрицание.\n" << "3. Умножение.\n" << "4. Деление.\n";
