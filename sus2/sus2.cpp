@@ -7,16 +7,19 @@ int main()
     float a, b, c, x;
     int num;
     setlocale(LC_ALL, "RUS");
-    
-    cout << endl << "vvedite pass ";
+
+    cout << endl << "Введите код: ";
     int pass;
     cin >> pass;
-    if (pass != 228)return 0;
+    if (pass != 228)
+        return 0;
+
     cout << "Введите a и b через пробел: ";
     cin >> a >> b;
     cout << "\n1. Сложение.\n" << "2. Отрицание.\n" << "3. Умножение.\n" << "4. Деление.\n";
     cout << "Введите номер нужного решения: ";
     cin >> num;
+
     switch (num) {
         case 1:
             c = a + b;
